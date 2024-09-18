@@ -1,5 +1,6 @@
 ﻿namespace CarManagementSystem_DLL;
 
-public class Class1
+public class Vehicle
 {
+    
 }
