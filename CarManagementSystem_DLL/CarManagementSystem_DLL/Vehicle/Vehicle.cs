@@ -1,4 +1,5 @@
-﻿using CarManagementSystem_DLL.State;
+﻿using CarManagementSystem_DLL.Interfaces;
+using CarManagementSystem_DLL.State;
 using CarManagementSystem_DLL.Strategy;
 
 namespace CarManagementSystem_DLL;
@@ -12,7 +13,7 @@ public abstract class AVehicle
     {
         Speed = 0;
         _driveBehaviour = new NormalDriving();
-        _vehicleState = new ParkingState();
+        _vehicleState = new ParkingState(this);
     }
     private IDriveBehaviour _driveBehaviour;
     private IVehicleState _vehicleState;
@@ -21,19 +22,19 @@ public abstract class AVehicle
     {
         _driveBehaviour = driveBehaviour;
     }
-    public void Drive()
-    {
-        while(_vehicleState is DrivingState)
-        {
-            _driveBehaviour.Drive(this);
-        }
-    }
+    
     public void Accelerate()
     {
+        if(_vehicleState is not DrivingState)
+            return;
         
+        Speed += _driveBehaviour.Drive(this);
     }
     public void Brake()
     {
-        //TODO
+        if(_vehicleState is not DrivingState)
+            return;
+        
+        Speed -= _driveBehaviour.Drive(this);
     }
 }

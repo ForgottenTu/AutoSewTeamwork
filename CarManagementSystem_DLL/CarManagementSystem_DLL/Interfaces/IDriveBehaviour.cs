@@ -2,5 +2,5 @@
 
 public interface IDriveBehaviour
 {
-    public void Drive(AVehicle vehicle);
+    public int Drive(AVehicle vehicle);
 }
