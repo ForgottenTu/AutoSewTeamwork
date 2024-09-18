@@ -1,4 +1,5 @@
 ﻿using CarManagementSystem_DLL.Interfaces;
+using CarManagementSystem_DLL.Vehicle;
 
 namespace CarManagementSystem_DLL.State;
 
@@ -8,16 +9,16 @@ public class ParkingState(AVehicle vehicle) :IVehicleState
 
     public void Driving()
     {
-        throw new NotImplementedException();
+        _vehicle.SetState(_vehicle.DrivingState);
     }
 
     public void Parking()
     {
-        throw new NotImplementedException();
+        return;
     }
 
     public void Repair()
     {
-        throw new NotImplementedException();
+        _vehicle.SetState(_vehicle.RepairState);
     }
 }

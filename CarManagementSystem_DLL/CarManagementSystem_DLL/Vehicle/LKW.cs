@@ -1,4 +1,4 @@
-﻿namespace CarManagementSystem_DLL;
+﻿namespace CarManagementSystem_DLL.Vehicle;
 
 public class LKW : AVehicle
 {
