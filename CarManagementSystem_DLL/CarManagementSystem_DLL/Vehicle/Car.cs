@@ -1,6 +1,6 @@
 ﻿namespace CarManagementSystem_DLL;
 
-public abstract class AVehicle
+public class Car : AVehicle
 {
     
 }

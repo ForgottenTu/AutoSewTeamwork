@@ -2,8 +2,9 @@
 
 public class NormalDriving : IDriveBehaviour
 {
-    public void Drive()
+    private int acceleration_rate = 10;
+    public void Drive(AVehicle vehicle)
     {
-        throw new NotImplementedException();
+        vehicle.Speed += acceleration_rate;
     }
 }

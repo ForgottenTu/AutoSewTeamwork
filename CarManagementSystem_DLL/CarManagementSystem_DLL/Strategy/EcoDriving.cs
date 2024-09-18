@@ -2,7 +2,7 @@
 
 public class EcoDriving : IDriveBehaviour
 {
-    public void Drive()
+    public void Drive(AVehicle vehicle)
     {
         throw new NotImplementedException();
     }
