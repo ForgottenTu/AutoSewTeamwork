@@ -9,7 +9,7 @@ public class ParkingState(AVehicle vehicle) :IVehicleState
 
     public void Driving()
     {
-        _vehicle.SetState(_vehicle.DrivingState);
+        _vehicle.SetState(_vehicle.drivingState);
     }
 
     public void Parking()
@@ -19,6 +19,6 @@ public class ParkingState(AVehicle vehicle) :IVehicleState
 
     public void Repair()
     {
-        _vehicle.SetState(_vehicle.RepairState);
+        _vehicle.SetState(_vehicle.repairState);
     }
 }

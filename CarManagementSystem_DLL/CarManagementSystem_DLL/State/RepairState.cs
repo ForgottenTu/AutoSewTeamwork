@@ -19,6 +19,6 @@ public class RepairState(AVehicle vehicle) : IVehicleState
 
     public void Repair()
     {
-        _vehicle.SetState(_vehicle.ParkingState);
+        _vehicle.SetState(_vehicle.parkingState);
     }
 }

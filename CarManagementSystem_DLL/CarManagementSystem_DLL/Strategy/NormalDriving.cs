@@ -5,9 +5,13 @@ namespace CarManagementSystem_DLL.Strategy;
 
 public class NormalDriving : IDriveBehaviour
 {
-    private int acceleration_rate = 10;
-    public void Drive(AVehicle vehicle)
+    private readonly int acceleration_rate = 10;
+    public int Drive(AVehicle vehicle)
     {
-        vehicle.Speed += acceleration_rate;
+        if(vehicle is LKW)
+            return acceleration_rate - 5;
+        if(vehicle is null)
+            throw new ArgumentNullException(nameof(vehicle));
+        return acceleration_rate;
     }
 }

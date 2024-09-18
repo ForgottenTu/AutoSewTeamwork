@@ -9,18 +9,18 @@ public abstract class AVehicle
     public int Speed { get; private set; }
     public string Model { get; private set; }
 
-    public readonly DrivingState DrivingState;
-    public readonly ParkingState ParkingState;
-    public readonly RepairState RepairState;
+    public DrivingState drivingState;
+    public ParkingState parkingState;
+    public RepairState repairState;
 
     public AVehicle()
     {
         Speed = 0;
         _driveBehaviour = new NormalDriving();
         _vehicleState = new ParkingState(this);
-        DrivingState = new DrivingState(this);
-        ParkingState = new ParkingState(this);
-        RepairState = new RepairState(this);
+        drivingState = new DrivingState(this);
+        parkingState = new ParkingState(this);
+        repairState = new RepairState(this);
     }
 
     private IDriveBehaviour _driveBehaviour;
@@ -30,20 +30,20 @@ public abstract class AVehicle
     {
         _driveBehaviour = driveBehaviour;
     }
-    public void Drive()
-    {
-        while(_vehicleState is DrivingState)
-        {
-            _driveBehaviour.Drive(this);
-        }
-    }
+
     public void Accelerate()
     {
-        
+        if(_vehicleState is not DrivingState)
+            SetState(drivingState);
+
+        Speed += _driveBehaviour.Drive(this);
     }
     public void Brake()
     {
-        //TODO
+        if(_vehicleState is not DrivingState)
+            return;
+
+        Speed -= _driveBehaviour.Drive(this);
     }
 
     public void SetState(IVehicleState state) => _vehicleState = state;
