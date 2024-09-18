@@ -1,7 +1,11 @@
-﻿namespace CarManagementSystem_DLL.State;
+﻿using CarManagementSystem_DLL.Interfaces;
 
-public class ParkingState :IVehicleState
+namespace CarManagementSystem_DLL.State;
+
+public class ParkingState(AVehicle vehicle) :IVehicleState
 {
+    private AVehicle _vehicle = vehicle;
+
     public void Driving()
     {
         throw new NotImplementedException();
@@ -12,7 +16,7 @@ public class ParkingState :IVehicleState
         throw new NotImplementedException();
     }
 
-    public void InMaintenance()
+    public void Repair()
     {
         throw new NotImplementedException();
     }

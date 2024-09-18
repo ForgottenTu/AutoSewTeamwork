@@ -1,8 +1,8 @@
-﻿namespace CarManagementSystem_DLL;
+﻿namespace CarManagementSystem_DLL.Interfaces;
 
 public interface IVehicleState
 {
     public void Driving();
     public void Parking();
-    public void InMaintenance();
+    public void Repair();
 }

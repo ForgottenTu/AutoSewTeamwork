@@ -1,4 +1,4 @@
-﻿namespace CarManagementSystem_DLL;
+﻿namespace CarManagementSystem_DLL.Interfaces;
 
 public interface IDriveBehaviour
 {
