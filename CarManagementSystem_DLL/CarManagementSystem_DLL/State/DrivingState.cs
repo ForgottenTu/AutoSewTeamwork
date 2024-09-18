@@ -1,18 +1,22 @@
-﻿namespace CarManagementSystem_DLL.State;
+﻿using CarManagementSystem_DLL.Interfaces;
 
-public class DrivingState :IVehicleState
+namespace CarManagementSystem_DLL.State;
+
+public class DrivingState(AVehicle vehicle) : IVehicleState
 {
+    private AVehicle _vehicle = vehicle;
+
     public void Driving()
     {
-        throw new NotImplementedException();
+        return;
     }
 
     public void Parking()
     {
-        throw new NotImplementedException();
+
     }
 
-    public void InMaintenance()
+    public void Repair()
     {
         throw new NotImplementedException();
     }

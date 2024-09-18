@@ -1,6 +1,6 @@
-﻿namespace CarManagementSystem_DLL;
+﻿namespace CarManagementSystem_DLL.Interfaces;
 
 public interface IDriveBehaviour
 {
-    public void Drive();
+    public int Drive(AVehicle vehicle);
 }
