@@ -1,6 +1,6 @@
 ﻿namespace CarManagementSystem_DLL.Vehicle;
 
-public class LKW : AVehicle
+public class Truck : AVehicle
 {
     
 }
