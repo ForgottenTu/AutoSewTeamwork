@@ -2,7 +2,7 @@
 
 namespace CarManagementSystem_DLL;
 
-public class CarBuilder
+public class VehicleBuilder
 {
     private readonly Car _car = new();
 
