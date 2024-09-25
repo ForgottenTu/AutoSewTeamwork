@@ -1,0 +1,12 @@
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\bin\Debug\net9.0\CarManagementSystem_DLL.deps.json
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\bin\Debug\net9.0\CarManagementSystem_DLL.dll
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\bin\Debug\net9.0\CarManagementSystem_DLL.pdb
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.AssemblyInfoInputs.cache
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.AssemblyInfo.cs
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.csproj.CoreCompileInputs.cache
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.sourcelink.json
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.dll
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\refint\CarManagementSystem_DLL.dll
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\CarManagementSystem_DLL.pdb
+C:\dev\AutoSewTeamwork\CarManagementSystem_DLL\CarManagementSystem_DLL\obj\Debug\net9.0\ref\CarManagementSystem_DLL.dll

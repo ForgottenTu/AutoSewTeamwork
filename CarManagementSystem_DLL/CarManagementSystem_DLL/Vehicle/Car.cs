@@ -2,5 +2,4 @@
 
 public class Car : AVehicle
 {
-    public string Model { get; set; }
 }
