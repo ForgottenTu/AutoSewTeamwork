@@ -6,6 +6,18 @@ namespace CarManagementSystem_DLL;
 
 public class CarFactory
 {
+    private static CarFactory _instance;
+    
+    public static CarFactory Instance
+    {
+        get
+        {
+            if(_instance == null)
+                _instance = new CarFactory();
+            return _instance;
+        }
+    }
+    
     public Vehicle.AVehicle CreateCar()
     {
         return new Car()
