@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarManagementSystem_DLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88fa931dca6170ed5c4fa6feb146e0976a553dbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4d00bc51b27e1e172ddeffce09fef0746661b29")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarManagementSystem_DLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarManagementSystem_DLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
