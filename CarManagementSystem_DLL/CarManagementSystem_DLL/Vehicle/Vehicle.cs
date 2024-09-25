@@ -23,7 +23,7 @@ public abstract class AVehicle
     }
 
     public IDriveBehaviour _driveBehaviour { get; set; }
-    private IVehicleState _vehicleState;
+    public IVehicleState _vehicleState;
 
     public void SetDriveBehaviour(IDriveBehaviour driveBehaviour)
     {
