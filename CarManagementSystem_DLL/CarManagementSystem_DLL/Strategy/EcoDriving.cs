@@ -9,7 +9,7 @@ public class EcoDriving : IDriveBehaviour
     
     public int Drive(AVehicle vehicle)
     {
-        if(vehicle is LKW)
+        if(vehicle is Truck)
             return acceleration_rate - 3;
         if(vehicle is null)
             throw new ArgumentNullException(nameof(vehicle));

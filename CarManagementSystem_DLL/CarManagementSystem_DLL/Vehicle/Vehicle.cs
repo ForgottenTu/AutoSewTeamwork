@@ -6,8 +6,8 @@ namespace CarManagementSystem_DLL.Vehicle;
 
 public abstract class AVehicle
 {
-    public int Speed { get; private set; }
-    public string Model { get; private set; }
+    public int Speed { get; set; }
+    public string Model { get; set; }
 
     public DrivingState drivingState;
     public ParkingState parkingState;
@@ -16,14 +16,13 @@ public abstract class AVehicle
     public AVehicle()
     {
         Speed = 0;
-        _driveBehaviour = new NormalDriving();
         _vehicleState = new ParkingState(this);
         drivingState = new DrivingState(this);
         parkingState = new ParkingState(this);
         repairState = new RepairState(this);
     }
 
-    private IDriveBehaviour _driveBehaviour;
+    public IDriveBehaviour _driveBehaviour { get; set; }
     private IVehicleState _vehicleState;
 
     public void SetDriveBehaviour(IDriveBehaviour driveBehaviour)

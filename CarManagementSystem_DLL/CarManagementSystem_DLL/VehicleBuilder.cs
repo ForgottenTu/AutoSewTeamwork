@@ -2,11 +2,11 @@
 
 namespace CarManagementSystem_DLL;
 
-public class CarBuilder
+public class VehicleBuilder
 {
     private readonly Car _car = new();
 
-    public CarBuilder SetModel(string model)
+    public VehicleBuilder SetModel(string model)
     {
         _car.Model = model;
         return this;
