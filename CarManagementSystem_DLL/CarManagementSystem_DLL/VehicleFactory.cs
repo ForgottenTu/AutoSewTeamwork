@@ -4,16 +4,16 @@ using CarManagementSystem_DLL.Vehicle;
 
 namespace CarManagementSystem_DLL;
 
-public class CarFactory
+public class VehicleFactory
 {
-    private static CarFactory _instance;
+    private static VehicleFactory _instance;
     
-    public static CarFactory Instance
+    public static VehicleFactory Instance
     {
         get
         {
             if(_instance == null)
-                _instance = new CarFactory();
+                _instance = new VehicleFactory();
             return _instance;
         }
     }

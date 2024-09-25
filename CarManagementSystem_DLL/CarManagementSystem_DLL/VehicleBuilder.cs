@@ -1,6 +1,6 @@
 ﻿namespace CarManagementSystem_DLL;
 
-public class CarBuilder
+public class VehicleBuilder
 {
     
 }
